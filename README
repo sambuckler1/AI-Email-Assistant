@@ -1,0 +1,48 @@
+# AI Email Assistant
+
+A fullstack Gmail assistant that uses the OpenAI API to generate professional replies to real emails from your Gmail inbox.
+
+Built with:
+- Next.js (App Router)
+- Node.js + Express
+- Google OAuth2 (Gmail API)
+- OpenAI GPT API
+---
+## Features
+- ✅ Google Sign-In
+- ✅ Fetch Gmail inbox
+- ✅ View + paginate real emails
+- ✅ Generate professional GPT-based replies
+- ✅ Send replies back via Gmail
+---
+## Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/client-email-assistant.git
+cd client-email-assistant
+
+
+Set up backend: 
+cd backend
+npm install
+
+run backend: node app.js
+backend runs on http://localhost:5000/auth/google/callback
+
+
+Set up frontend:
+cd frontend
+npm install
+npm run dev
+opens at http://localhost:3000
+
+
+Improvements to be made: 
+Gmail thread support (show full conversation)
+Tone selector (friendly, professional, etc)
+
+Make into a google chrome extension:
+- Inject a generate reply button inside gmail UI
+- Need a different backend host, prob Render
